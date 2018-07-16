@@ -9,7 +9,7 @@ function chargerClasse($classe)
 }
 chargerClasse('itemCard'); */
 
-require_once('itemCard.php');
+require_once('CitemCard.php');
 //require_once('iterateur.php');
 
 
