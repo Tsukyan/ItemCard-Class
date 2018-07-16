@@ -53,10 +53,40 @@ class cardItem
                   <div class="card-body">
                     <h4 class="card-title">'.$this->titre.'<hr/></h4>
                     <p class="card-text">'.$this->texte.'</p>
-                    <a href="#" class="btn btn-dark">See Profile</a>
+                      <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal">
+                      Ouvrir
+                      </button>
                   </div>
                 </div>
-              </div>'/*
+              </div>
+
+          <div class="modal fade" id="myModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">'.$this->titre.'</h4>
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                    <div class="card m-2 bg-'.$this->couleur.' " style="height-min: '.$this->taille.' px">
+                      <div class="hovereffect">
+                          <img class="card-img-top img-responsive" src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Card image">
+                          <div class="overlay">
+                                      <h2>'.$this->titre.'</h2>
+                              <p>
+                                '.$this->texte.'
+                              </p>
+                          </div>
+                        </div>
+
+                      <div class="card-body">
+                        <h4 class="card-title">'.$this->titre.'<hr/></h4>
+                        <p class="card-text">'.$this->texte.'</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          '/*
                 <div class="card m-2 bg-'.$this->couleur.' " style="width:'.$this->taille.' px">
                   <div class="card-body">
                     <h4 class="card-title">'.$this->titre.'</h4>
